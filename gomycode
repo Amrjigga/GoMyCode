@@ -1,0 +1,64 @@
+import math 
+#question 1
+l= []
+
+for i in range(2000, 3201):
+ if i%7==0 and i%5!= 0:
+   
+   l.append(i)
+print(l)
+
+
+#question 2 factorial
+def factorial(n):
+  factorial=1 
+
+  for i in range(5):
+    factorial*=i+1 
+  return factorial 
+print(factorial(5))
+
+#question 3 
+
+number = int(input("Type a number: "))
+
+my_dictionary = {}
+for i in range(1, number+1):
+    my_dictionary[i] = i*i
+
+print(my_dictionary)
+
+# question 4 
+def remove_char(str, n):
+      first_part = str[:n] 
+      last_part = str[n+1:]
+      return first_part + last_part
+print(remove_char('char', 0))
+
+#question 5
+import numpy as np
+
+my_array= np.array([7,8,9])
+my_list= my_array.tolist()
+
+print(my_list)
+
+#question 6 
+arr1 = np.array([0, 1, 1])
+arr2 = np.array([2, 2, 1])
+
+print( np.cov(arr1, arr2))
+
+#question 7 
+import math
+
+numbers = input("Provide D: ")
+numbers = numbers.split(',')
+
+result_list = []
+for D in numbers:
+    Q = round(math.sqrt(2 * 50 * int(D) / 30))
+    result_list.append(Q)
+    
+
+print(result_list)
